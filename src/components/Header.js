@@ -1,5 +1,7 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import planet_image from "../images/planet_image.png";
+import '../styles/Header.css'
 
 export default function Header() {
   const location = useLocation();
@@ -15,7 +17,7 @@ export default function Header() {
     <header>
       <nav>
         <ul className="nav-links">
-          <li className="head">Bookstore CMS</li>
+          <li><img src={planet_image} className="img" alt='planet-img' /></li>
           <li className="route">
             <Link to="/" style={getLinkStyle('/')}>Rockets</Link>
           </li>
