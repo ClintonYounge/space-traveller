@@ -16,7 +16,7 @@ export default function Header() {
   return (
     <header>
       <nav>
-        <ul className="nav-links">
+        <ul className="nav-links list-none">
           <li><img src={planet_image} className="img" alt='planet-img' /></li>
           <li className="route">
             <Link to="/" style={getLinkStyle('/')}>Rockets</Link>
