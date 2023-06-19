@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Shantell+Sans:wght@300;400;500&display=swap');
+
+.home-page {
+  padding: 0 3rem;
+}
+
+h2,
+p {
+  font-family: 'Shantell Sans', cursive;
+}
+
+p {
+  text-align: center;
+}

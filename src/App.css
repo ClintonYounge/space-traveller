@@ -1,0 +1,47 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+h1 {
+  margin-bottom: 1rem;
+  padding: 3rem;
+  font-family: 'Shantell Sans', cursive;
+}
+
+.quote {
+  margin: auto;
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 1rem;
+  background-color: #f2f2f2;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 2rem;
+  font-family: 'Shantell Sans', cursive;
+}
+
+ul li {
+  display: inline;
+  list-style-type: none;
+  margin: 0;
+}
+
+ul li a {
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 20px;
+  display: inline-block;
+}
+
+ul li a:hover {
+  text-decoration: underline;
+}
+
+ul {
+  background-color: #111;
+  padding: 0;
+}

@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders quote and author 1`] = `"Quote: I started on an Apple II, which I had bought at the very end of 1978 for half of my annual income. I made $4,500 a year, and I spent half of it on the computer."`;
