@@ -1,9 +1,17 @@
 import React from 'react';
-import './styles/App.css';
+import Header from './components/Header';
+import { Route, Routes } from 'react-router-dom';
 
 function App() {
   return (
-    <h1>Hello World</h1>
+    <>
+      <Header />
+      <Routes>
+        <Route path="/" />
+        <Route path="/missions" />
+        <Route path="/profile" />
+      </Routes>
+    </>
   );
 }
 
