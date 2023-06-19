@@ -1,25 +1,21 @@
 
-# Math-magician
+# Space Traveller
 
 <a name="readme-top"></a>
 
 <div align="center">
   <br/>
 
-  <h3><b> Math Magician</b></h3>
+  <h3><b> Space Traveller</b></h3>
 
 </div>
 
 # 📗 Table of Contents
 
 - [📖 About the Project](#about-project)
-
   - [🛠 Built With](#built-with)
-
     - [Key Features](#key-features)
     - [Future Features](#future-features)
-- [📖 Live Demo](#live-demo)
-
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -33,7 +29,7 @@
 # 📖 Math Magician <a name="about-project"></a>
 
 **Math Magician**
-This is a project built with React.
+This is a project built with React and Redux.
 
 
 
@@ -54,16 +50,10 @@ https://mpa-mxiang.github.io/math-magician/src/
 
 </a>
 
-- Modify calculator display
+- Add necessary features and functionality.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-### Live Demo <a name="live-demo">
-
-[  https://development--subtle-cheesecake-e0b934.netlify.app
-](https://development--subtle-cheesecake-e0b934.netlify.app/)  
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
@@ -139,30 +129,37 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
 ## 👥 Authors <a name="authors"></a>
+
 👤 ** Jiachun Xiang **
 
 - GitHub: https://github.com/mpa-mxiang
 - LinkedIn: https://www.linkedin.com/in/jiachun-lily-xiang-1b197213a/
+
+👤 ** Clinton Younge **
+
+- GitHub: [@ClintonYounge](https://github.com/ClintonYounge)
+- Linkedin: [@clinton-younge](https://www.linkedin.com/in/clinton-younge-83386a25a/)
+- Twitter: [@YoungeCjay](https://twitter.com/YoungeCjay)
 
 
 ## 🤝 Contributing <a name="contributing"></a>
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/GeekyHacks/My-Personal-Portfolio/issues).
+Feel free to check the [issues page](../../issues/).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## ⭐️ Show your support <a name="support"></a>
 
-If you like this project please don't hesitate to support me with your valued contribution and don't forget to star the repo to reach more
+If you like this project please don't hesitate to support us with your valued contribution and don't forget to star the repo to reach more
 people.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to appriciate the help I received from all people.
+We would like to appreciate the help we received from all people.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -180,7 +177,7 @@ Can I contribute to this project?\*\*
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](https://github.com/GeekyHacks/Personal-Portfolio-Microverse/blob/c94c940b573e85b888d2d3da699284214552018b/MIT.md) licensed.
+This project is [License](./LICENSE) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
