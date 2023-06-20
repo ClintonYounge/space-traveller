@@ -1,0 +1,6 @@
+section {
+  display: flex;
+  width: 60%;
+  justify-content: space-between;
+  margin: auto;
+}
