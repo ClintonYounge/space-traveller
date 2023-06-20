@@ -1,5 +1,3 @@
-// src/redux/components/BookContainer.js
-
 import { useSelector, useDispatch } from 'react-redux';
 import { useEffect } from 'react';
 import Missions from './Missions';
