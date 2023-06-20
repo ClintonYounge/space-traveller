@@ -1,4 +1,6 @@
 import PropTypes from 'prop-types';
+import { useDispatch } from 'react-redux';
+import { reserveRocket, cancelReserve } from '../redux/rockets/rocketsSlice';
 
 export default function Rockets({
   rocketId,
@@ -7,6 +9,14 @@ export default function Rockets({
   flickrImages,
   reserved,
 }) {
+  const dispatch = useDispatch();
+
+  const handleReserve = () => {
+    dispatch(reserveRocket(missionId));
+  };
+  const handleCancel = () => {
+    dispatch(cancelReserve(rocketId));
+  };
   return (
     <div className="flex flex-col">
       <div id={rocketId} className="flex flex-row">
@@ -17,7 +27,7 @@ export default function Rockets({
           <h2>{rocketName}</h2>
           <p>{description}</p>
           {
-              reserved ? <button type="button">Cancel Reservation</button> : <button type="button">Reserve Rocket</button>
+              reserved ? <button type="button" onClick={handleCancel}>Cancel Reservation</button> : <button type="button" onClick={handleReserve}>Reserve Rocket</button>
             }
         </div>
       </div>
