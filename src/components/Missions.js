@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 export default function Missions({
   missionId,
   missionName,
@@ -23,3 +25,10 @@ export default function Missions({
     </ul>
   );
 }
+
+Missions.propTypes = {
+  missionId: PropTypes.string.isRequired,
+  missionName: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+  missionJoined: PropTypes.bool.isRequired,
+};
