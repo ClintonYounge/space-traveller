@@ -5,7 +5,7 @@ const initialState = {
   rockets: [],
   isLoading: false,
   error: undefined,
-  rocketJoined: false,
+  rocketReserved: false,
 };
 
 const url = 'https://api.spacexdata.com/v4/rockets';
@@ -25,7 +25,7 @@ const rocketsSlice = createSlice({
         ...state,
         rockets: state.rockets.map((rocket) => (
           rocket.rocket_id === rocketId ? {
-            ...rocketId, joined: true,
+            ...rocketId, rocketReserved: true,
           } : rocket)),
       };
     },
@@ -34,7 +34,7 @@ const rocketsSlice = createSlice({
       return {
         ...state,
         rockets: state.rockets.map((rocket) => (rocket.rocketId === rocketId
-          ? { ...rocket, joined: false }
+          ? { ...rocket, rocketReserved: false }
           : rocket)),
       };
     },
@@ -48,7 +48,7 @@ const rocketsSlice = createSlice({
       .addCase(fetchRockets.fulfilled, (state, action) => ({
         ...state,
         isLoading: false,
-        missions: action.payload,
+        rockets: action.payload,
       }))
       .addCase(fetchRockets.rejected, (state) => ({
         ...state,
