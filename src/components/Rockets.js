@@ -37,8 +37,14 @@ export default function Rockets({
 
 Rockets.propTypes = {
   rocketId: PropTypes.string.isRequired,
-  rocketName: PropTypes.string.isRequired,
+  rocketName: PropTypes.string,
   description: PropTypes.string.isRequired,
-  flickrImages: PropTypes.element.isRequired,
-  reserved: PropTypes.bool.isRequired,
+  flickrImages: PropTypes.string,
+  reserved: PropTypes.bool,
+};
+
+Rockets.defaultProps = {
+  rocketName: '',
+  flickrImages: '',
+  reserved: false,
 };
