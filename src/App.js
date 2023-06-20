@@ -1,33 +1,20 @@
-import './App.css';
-import {
-  BrowserRouter as Router, Link, Route, Routes,
-} from 'react-router-dom';
+import React from 'react';
+import { Route, Routes } from 'react-router-dom';
+import Header from './components/Header';
+import MissionsContainer from './components/MissionsContainer';
 
-const App = () => (
-  <Router>
-    <div>
-      <nav>
-        <ul>
-          <li>
-            <Link to=""></Link>
-          </li>
-          <li>
-            <Link to=""></Link>
-          </li>
-          <li>
-            <Link to=""></Link>
-          </li>
-        </ul>
-      </nav>
-
-      <h1></h1>
+function App() {
+  return (
+    <>
+      <Header />
       <Routes>
         <Route path="/" />
-        <Route path="/calculator" element={<Calculator />} />
-        <Route path="/quote" element={<Quote />} />
+        <Route path="/rockets" />
+        <Route path="/missions" element={<MissionsContainer />} />
+        <Route path="/profile" />
       </Routes>
-    </div>
-  </Router>
-);
+    </>
+  );
+}
 
 export default App;
