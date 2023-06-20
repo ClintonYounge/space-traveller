@@ -1,18 +1,25 @@
 export default function Missions({
-  mission_id,
-  mission_name,
+  missionId,
+  missionName,
   description,
-  mission_joined,
+  missionJoined,
 }) {
-  
   return (
-    <ul id={mission_id}>
-        <li>Name: {mission_name}</li>
-        <li>Description: {description}</li>
-        <li>{mission_joined ? "Active Member" : "Not A Member"}</li>
-        <li>{
-            mission_joined ? <button>Leave Mission</button> : <button>Join Mission</button>}
-        </li>
+    <ul id={missionId}>
+      <li>
+        Name:
+        {missionName}
+      </li>
+      <li>
+        Description:
+        {description}
+      </li>
+      <li>{missionJoined ? 'Active Member' : 'Not A Member'}</li>
+      <li>
+        {
+            missionJoined ? <button type="button">Leave Mission</button> : <button type="button">Join Mission</button>
+}
+      </li>
     </ul>
   );
 }

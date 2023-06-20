@@ -6,7 +6,9 @@ import Missions from './Missions';
 import { fetchMissions } from '../redux/missions/missionsSlice';
 
 export default function MissionsContainer() {
-  const { missions, isLoading, error, mission_joined } = useSelector((state) => state.missions);
+  const {
+    missions, isLoading, error, missionJoined,
+  } = useSelector((state) => state.missions);
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -25,12 +27,13 @@ export default function MissionsContainer() {
 
   return (
     missions.map((mission) => (
-        <Missions
-          mission_id={mission.mission_id}
-          mission_name={mission.mission_name}
-          description={mission.description}
-          mission_joined={mission_joined}
-        />
+      <Missions
+        key={mission.mission_id}
+        missionId={mission.mission_id}
+        missionName={mission.mission_name}
+        description={mission.description}
+        missionJoined={missionJoined}
+      />
     ))
-  )
+  );
 }

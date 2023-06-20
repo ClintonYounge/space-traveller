@@ -7,7 +7,7 @@ const initialState = {
   missions: [],
   isLoading: false,
   error: undefined,
-  mission_joined: true,
+  missionJoined: true,
 };
 
 const url = 'https://api.spacexdata.com/v3/missions';
@@ -36,7 +36,7 @@ const missionsSlice = createSlice({
         ...state,
         isLoading: false,
         error: true,
-      }))
+      }));
   },
 });
 
