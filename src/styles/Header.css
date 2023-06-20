@@ -1,3 +1,11 @@
 .img {
     width: 30px;
 }
+
+ul {
+    display: flex;
+}
+
+ul li {
+    margin: 20px;
+}
