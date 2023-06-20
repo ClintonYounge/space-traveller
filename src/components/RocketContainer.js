@@ -1,7 +1,7 @@
 import { useSelector, useDispatch } from 'react-redux';
 import { useEffect } from 'react';
-import Missions from './Missions';
-import { fetchMissions } from '../redux/rockets/rocketsSlice';
+import Rockets from './Rockets';
+import { fetchRockets } from '../redux/rockets/rocketsSlice';
 
 export default function RocketsContainer() {
   const {
@@ -10,7 +10,7 @@ export default function RocketsContainer() {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    dispatch(fetchMissions());
+    dispatch(fetchRockets());
   }, [dispatch]);
 
   if (isLoading) {
@@ -28,9 +28,9 @@ export default function RocketsContainer() {
       <Rockets
         key={rockets.rocketId}
         missionId={rockets.rocketId}
-        rocketName={rockets.rocket_name}
+        rocket_name={rockets.rocketName}
         description={rockets.description}
-        flickr_images = {rockets.flickr_images}
+        flickr_images={rockets.flickrImages}
         reserved={rockets.reserved}
       />
     ))
