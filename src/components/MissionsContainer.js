@@ -7,7 +7,7 @@ import { fetchMissions } from '../redux/missions/missionsSlice';
 
 export default function MissionsContainer() {
   const {
-    missions, isLoading, error, missionJoined,
+    missions, isLoading, error,
   } = useSelector((state) => state.missions);
   const dispatch = useDispatch();
 
@@ -32,7 +32,7 @@ export default function MissionsContainer() {
         missionId={mission.mission_id}
         missionName={mission.mission_name}
         description={mission.description}
-        missionJoined={missionJoined}
+        joined={mission.joined}
       />
     ))
   );
