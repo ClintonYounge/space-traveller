@@ -9,8 +9,7 @@ function App() {
     <>
       <Header />
       <Routes>
-        <Route path="/" />
-        <Route path="/rockets" element={<RocketsContainer />} />
+        <Route path="/" element={<RocketsContainer />} />
         <Route path="/missions" element={<MissionsContainer />} />
         <Route path="/profile" />
       </Routes>

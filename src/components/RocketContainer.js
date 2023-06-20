@@ -26,11 +26,11 @@ export default function RocketsContainer() {
   return (
     rockets.map((rockets) => (
       <Rockets
-        key={rockets.rocketId}
-        missionId={rockets.rocketId}
-        rocket_name={rockets.rocketName}
+        key={rockets.id}
+        rocketId={rockets.id}
+        rocketName={rockets.rocket_name}
         description={rockets.description}
-        flickr_images={rockets.flickrImages}
+        flickrImages={rockets.flickr_images}
         reserved={rockets.reserved}
       />
     ))
