@@ -1,5 +1,3 @@
-// // src/redux/books/booksSlice.js
-
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
 
@@ -7,7 +5,7 @@ const initialState = {
   missions: [],
   isLoading: false,
   error: undefined,
-  missionJoined: true,
+  joined: false,
 };
 
 const url = 'https://api.spacexdata.com/v3/missions';
@@ -20,7 +18,27 @@ export const fetchMissions = createAsyncThunk('missions/fetchMissions', async ()
 const missionsSlice = createSlice({
   name: 'missionsSlice',
   initialState,
-  reducers: {},
+  reducers: {
+    joinMission: (state, action) => {
+      const missionId = action.payload;
+      return {
+        ...state,
+        missions: state.missions.map((mission) => (
+          mission.mission_id === missionId ? {
+            ...mission, joined: true,
+          } : mission)),
+      };
+    },
+    leaveMission: (state, action) => {
+      const missionId = action.payload;
+      return {
+        ...state,
+        missions: state.missions.map((mission) => (mission.mission_id === missionId
+          ? { ...mission, joined: false }
+          : mission)),
+      };
+    },
+  },
   extraReducers(builder) {
     builder
       .addCase(fetchMissions.pending, (state) => ({
@@ -39,5 +57,7 @@ const missionsSlice = createSlice({
       }));
   },
 });
+
+export const { joinMission, leaveMission } = missionsSlice.actions;
 
 export default missionsSlice.reducer;
