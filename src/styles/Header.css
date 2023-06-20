@@ -1,11 +1,11 @@
 .img {
-    width: 30px;
+  width: 30px;
 }
 
 ul {
-    display: flex;
+  display: flex;
 }
 
 ul li {
-    margin: 20px;
+  margin: 20px;
 }
