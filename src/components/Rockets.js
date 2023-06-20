@@ -12,7 +12,7 @@ export default function Rockets({
   const dispatch = useDispatch();
 
   const handleReserve = () => {
-    dispatch(reserveRocket(missionId));
+    dispatch(reserveRocket(rocketId));
   };
   const handleCancel = () => {
     dispatch(cancelReserve(rocketId));
