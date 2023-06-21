@@ -1,4 +1,4 @@
-import reducers from '../../reducers';
+import '../components/Rockets';
 
 test('reducers', () => {
   let state;
