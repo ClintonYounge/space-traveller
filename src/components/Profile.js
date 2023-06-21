@@ -3,7 +3,7 @@ import JoinedMissions from './JoinedMissions';
 
 export default function Profile() {
   return (
-    <section>
+    <section className="profile-container">
       <div>
         <h1>My Missions</h1>
         <JoinedMissions />

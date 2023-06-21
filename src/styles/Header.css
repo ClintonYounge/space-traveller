@@ -2,10 +2,11 @@
   width: 30px;
 }
 
-ul {
+.nav-links {
   display: flex;
 }
 
-ul li {
+.route,
+.img {
   margin: 20px;
 }
