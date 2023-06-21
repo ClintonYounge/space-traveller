@@ -30,7 +30,7 @@ export default function RocketsContainer() {
       <Rockets
         key={rockets.id}
         rocketId={rockets.id}
-        rocketName={rockets.rocket_name}
+        rocketName={rockets.name}
         description={rockets.description}
         flickrImages={rockets.flickr_images}
         reserved={rockets.reserved}
