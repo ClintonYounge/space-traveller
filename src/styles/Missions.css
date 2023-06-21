@@ -1,111 +1,111 @@
 .missions-container,
 .mission-container {
-    width: 90%;
-    margin: auto;
-    display: grid;
-    grid-template-columns: 1fr 7fr 1fr 1fr;
-    border-left: 1px solid black;
-    border-top: 1px solid black;
+  width: 90%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 7fr 1fr 1fr;
+  border-left: 1px solid black;
+  border-top: 1px solid black;
 }
 
 .missions-container li,
 .mission-container li {
-    border-right: 1px solid black;
+  border-right: 1px solid black;
 }
 
 .mission-container:nth-child(10) {
-    border-bottom: 1px solid black;
+  border-bottom: 1px solid black;
 }
 
 .mission-container:nth-child(odd) {
-    background-color: rgb(229, 226, 226);
+  background-color: rgb(229, 226, 226);
 }
 
 .mission {
-    font-weight: 400;
+  font-weight: 400;
 }
 
 .missions-container li {
-    margin-left: 10px;
+  margin-left: 10px;
 }
 
 .missions-container:nth-child(2) {
-    font-size: 16px;
-    font-weight: 500;
+  font-size: 16px;
+  font-weight: 500;
 }
 
 .mission-container li {
-    padding-bottom: 30px;
+  padding-bottom: 30px;
 }
 
 .mission-container li:first-child {
-    margin-left: 10px;
+  margin-left: 10px;
 }
 
-.mission-container li:nth-child(2){
-    padding: 5px 10px;
+.mission-container li:nth-child(2) {
+  padding: 5px 10px;
 }
 
 .mission-name {
-    font-weight: 600;
-    font-size: 15px;
+  font-weight: 600;
+  font-size: 15px;
 }
 
 .mission-description {
-    font-size: 14px;
+  font-size: 14px;
 }
 
 .mission-status {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-  
+
 .not-member {
-    margin-top: 30px;
-    font-size: 13px;
-    font-weight: 500;
-    color: white;
-    text-align: center;
-    background-color: grey;
-    width: 90%;
-    padding: 5px;
-    border-radius: 3px;
+  margin-top: 30px;
+  font-size: 13px;
+  font-weight: 500;
+  color: white;
+  text-align: center;
+  background-color: grey;
+  width: 90%;
+  padding: 5px;
+  border-radius: 3px;
 }
 
 .member {
-    margin-top: 30px;
-    font-size: 14px;
-    font-weight: 500;
-    background-color: rgb(5, 150, 166);
-    width: 90%;
-    padding: 5px;
-    text-align: center;
-    border-radius: 3px;
-    color: white;
+  margin-top: 30px;
+  font-size: 14px;
+  font-weight: 500;
+  background-color: rgb(5, 150, 166);
+  width: 90%;
+  padding: 5px;
+  text-align: center;
+  border-radius: 3px;
+  color: white;
 }
 
 .mission-action {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .leave-mission-btn {
-    margin-top: 30px;
-    font-size: 14px;
-    width: 90%;
-    padding: 5px;
-    border: 1px solid rgb(255, 0, 0);
-    color: red;
-    border-radius: 3px;
+  margin-top: 30px;
+  font-size: 14px;
+  width: 90%;
+  padding: 5px;
+  border: 1px solid rgb(255, 0, 0);
+  color: red;
+  border-radius: 3px;
 }
 
 .join-mission-btn {
-    margin-top: 30px;
-    font-size: 14px;
-    width: 90%;
-    padding: 5px;
-    border: 1px solid black;
-    border-radius: 3px;
+  margin-top: 30px;
+  font-size: 14px;
+  width: 90%;
+  padding: 5px;
+  border: 1px solid black;
+  border-radius: 3px;
 }
