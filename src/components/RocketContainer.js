@@ -10,10 +10,10 @@ export default function RocketsContainer() {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    if (missions.length === 0) {
-      dispatch(fetchMissions());
+    if (rockets.length === 0) {
+      dispatch(fetchRockets());
     }
-  }, [dispatch, missions]);
+  }, [dispatch, rockets]);
 
   if (isLoading) {
     return (
