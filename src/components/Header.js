@@ -17,14 +17,15 @@ export default function Header() {
     <header>
       <nav>
         <ul className="nav-links list-none">
-          <li><img src={planetImage} className="img" alt="planet-img" /></li>
-          <li className="route">
+          <li><img src={planetImage} className="logo" alt="planet-img" /></li>
+          <li className="logo-head">Space Travelers&apos; Hub</li>
+          <li className="nav-link">
             <Link to="/" style={getLinkStyle('/')}>Rockets</Link>
           </li>
-          <li className="route">
+          <li className="nav-link nav-link2">
             <Link to="/missions" style={getLinkStyle('/missions')}>Missions</Link>
           </li>
-          <li className="route">
+          <li className="nav-link">
             <Link to="/profile" style={getLinkStyle('/profile')}>My Profile</Link>
           </li>
         </ul>
