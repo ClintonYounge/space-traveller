@@ -39,12 +39,11 @@ Rockets.propTypes = {
   rocketId: PropTypes.string.isRequired,
   rocketName: PropTypes.string,
   description: PropTypes.string.isRequired,
-  flickrImages: PropTypes.string,
+  flickrImages: PropTypes.arrayOf(PropTypes.string).isRequired,
   reserved: PropTypes.bool,
 };
 
 Rockets.defaultProps = {
   rocketName: '',
-  flickrImages: '',
   reserved: false,
 };
