@@ -25,6 +25,7 @@ export default function Rockets({
         </div>
         <div>
           <h2>{rocketName}</h2>
+          <p>{reserved ? 'Reserved' : ''}</p>
           <p>{description}</p>
           {
               reserved ? <button type="button" onClick={handleCancel}>Cancel Reservation</button> : <button type="button" onClick={handleReserve}>Reserve Rocket</button>
