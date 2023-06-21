@@ -5,7 +5,7 @@ const initialState = {
   rockets: [],
   isLoading: false,
   error: undefined,
-  rocketReserved: false,
+  reserved: false,
 };
 
 const url = 'https://api.spacexdata.com/v4/rockets';
@@ -23,18 +23,17 @@ const rocketsSlice = createSlice({
       const rocketId = action.payload;
       return {
         ...state,
-        rockets: state.rockets.map((rocket) => (
-          rocket.rocket_id === rocketId ? {
-            ...rocketId, rocketReserved: true,
-          } : rocket)),
+        rockets: state.rockets.map((rocket) => (rocket.id === rocketId
+          ? { ...rocket, reserved: true }
+          : rocket)),
       };
     },
     cancelReserve: (state, action) => {
       const rocketId = action.payload;
       return {
         ...state,
-        rockets: state.rockets.map((rocket) => (rocket.rocketId === rocketId
-          ? { ...rocket, rocketReserved: false }
+        rockets: state.rockets.map((rocket) => (rocket.id === rocketId
+          ? { ...rocket, reserved: false }
           : rocket)),
       };
     },
