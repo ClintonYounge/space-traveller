@@ -5,6 +5,6 @@ export default function JoinedMissions() {
 
   return (
     rockets.map((rockets) => (
-      rockets.joined ? <li key={rockets.rocketId}>{rockets.rocketName}</li> : null))
+      rockets.reserved ? <li key={rockets.id}>{rockets.name}</li> : null))
   );
 }
