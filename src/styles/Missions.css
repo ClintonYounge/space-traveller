@@ -1,6 +1,6 @@
 .missions-container,
 .mission-container {
-  width: 90%;
+  width: 95%;
   margin: auto;
   display: grid;
   grid-template-columns: 1fr 7fr 1fr 1fr;
