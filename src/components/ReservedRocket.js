@@ -5,6 +5,6 @@ export default function JoinedMissions() {
 
   return (
     rockets.map((rockets) => (
-      rockets.reserved ? <li className="border-inherit border-2 list-none p-5" key={rockets.id}>{rockets.name}</li> : null))
+      rockets.reserved ? <li className="border-inherit border-2 list-none p-5 w-96" key={rockets.id}>{rockets.name}</li> : null))
   );
 }
