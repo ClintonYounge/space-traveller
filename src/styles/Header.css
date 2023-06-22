@@ -1,0 +1,23 @@
+.logo {
+  width: 100px;
+}
+
+.nav-links {
+  display: grid;
+  grid-template-columns: 0.7fr 6fr 1fr 1fr 1fr;
+}
+
+header {
+  margin-bottom: 50px;
+  border-bottom: 1px solid grey;
+}
+
+.logo-head {
+  font-size: 40px;
+  font-weight: 600;
+  padding-top: 10px;
+}
+
+.nav-link {
+  margin-top: 30px;
+}

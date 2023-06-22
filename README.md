@@ -26,15 +26,10 @@
 - [❓ FAQ](#faq)
 - [📝 License](#license)
 
-# 📖 Math Magician <a name="about-project"></a>
+# 📖 Space Traveller <a name="about-project"></a>
 
-**Math Magician**
+**Space Traveller**
 This is a project built with React and Redux.
-
-
-
-https://mpa-mxiang.github.io/math-magician/src/
-
 
 ## 🛠 Built With <a name="built-with">React</a>
 
