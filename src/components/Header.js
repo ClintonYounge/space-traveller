@@ -18,7 +18,7 @@ export default function Header() {
 
   return (
     <header>
-      <nav>
+      <Navlink>
         <ul className="nav-links list-none">
           <li><img src={planetImage} className="logo" alt="planet-img" /></li>
           <li className="logo-head">Space Travelers&apos; Hub</li>
@@ -32,7 +32,7 @@ export default function Header() {
             <Link to="/profile" style={getLinkStyle('/profile')}>My Profile</Link>
           </li>
         </ul>
-      </nav>
+      </Navlink>
     </header>
   );
 }
