@@ -5,6 +5,6 @@ export default function JoinedMissions() {
 
   return (
     missions.map((mission) => (
-      mission.joined ? <li className="border-inherit border-2 list-none p-5 w-96" key={mission.mission_id}>{mission.mission_name}</li> : null))
+      mission.joined ? <li className="joined-mission" key={mission.mission_id}>{mission.mission_name}</li> : null))
   );
 }

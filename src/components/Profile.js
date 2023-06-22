@@ -5,13 +5,13 @@ import ReservedRocket from './ReservedRocket';
 export default function Profile() {
   return (
     <section className="profile-container">
-      <div>
+      <div className="joined-reserved">
         <h1>My Missions</h1>
-        <JoinedMissions />
+        <ul className="joined-missions"><JoinedMissions /></ul>
       </div>
-      <div>
+      <div className="joined-reserved">
         <h1>My Rockets</h1>
-        <ReservedRocket />
+        <ul className="reserved-rockets"><ReservedRocket /></ul>
       </div>
     </section>
   );
