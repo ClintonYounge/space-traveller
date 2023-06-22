@@ -8,9 +8,12 @@ export default function Header() {
 
   const getLinkStyle = (path) => {
     if (location.pathname === path) {
-      return { color: 'black' };
+      return {
+        color: 'rgb(10, 10, 167)',
+        textDecoration: 'underline',
+      };
     }
-    return { color: 'grey' };
+    return { color: 'blue' };
   };
 
   return (
