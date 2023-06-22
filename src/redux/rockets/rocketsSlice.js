@@ -1,5 +1,4 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
-import axios from 'axios';
 
 const initialState = {
   rockets: [],
@@ -11,8 +10,16 @@ const initialState = {
 const url = 'https://api.spacexdata.com/v4/rockets';
 
 export const fetchRockets = createAsyncThunk('rockets/fetchRockets', async () => {
-  const response = await axios.get(url);
-  return response.data;
+  try {
+    const response = await fetch(url);
+    if (!response.ok) {
+      throw new Error('Failed to fetch rockets');
+    }
+    const data = await response.json();
+    return data;
+  } catch (error) {
+    throw new Error('Failed to fetch rockets');
+  }
 });
 
 const rocketsSlice = createSlice({
@@ -23,18 +30,16 @@ const rocketsSlice = createSlice({
       const rocketId = action.payload;
       return {
         ...state,
-        rockets: state.rockets.map((rocket) => (rocket.id === rocketId
-          ? { ...rocket, reserved: true }
-          : rocket)),
+        rockets: state.rockets.map((rocket) => (
+          rocket.id === rocketId ? { ...rocket, reserved: true } : rocket)),
       };
     },
     cancelReserve: (state, action) => {
       const rocketId = action.payload;
       return {
         ...state,
-        rockets: state.rockets.map((rocket) => (rocket.id === rocketId
-          ? { ...rocket, reserved: false }
-          : rocket)),
+        rockets: state.rockets.map((rocket) => (
+          rocket.id === rocketId ? { ...rocket, reserved: false } : rocket)),
       };
     },
   },
@@ -56,6 +61,7 @@ const rocketsSlice = createSlice({
       }));
   },
 });
+
 export const { reserveRocket, cancelReserve } = rocketsSlice.actions;
 
 export default rocketsSlice.reducer;
