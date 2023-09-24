@@ -1,12 +1,10 @@
-
-# Space Traveller
-
 <a name="readme-top"></a>
 
 <div align="center">
+  <img src="./src/images//planet_image.png" alt="logo" width="140"  height="auto" />
   <br/>
 
-  <h3><b> Space Traveller</b></h3>
+  <h3><b>Space Traveller</b></h3>
 
 </div>
 
@@ -14,121 +12,111 @@
 
 - [📖 About the Project](#about-project)
   - [🛠 Built With](#built-with)
-    - [Key Features](#key-features)
-    - [Future Features](#future-features)
+    - [Tech Stack](#tech-stack)
+  - [Key Features](#key-features)
+  - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
+  - [Install](#install)
+  - [Run tests](#run-tests)
 - [👥 Authors](#authors)
+- [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
 - [🙏 Acknowledgements](#acknowledgements)
 - [❓ FAQ](#faq)
 - [📝 License](#license)
 
-# 📖 Space Traveller <a name="about-project"></a>
 
-**Space Traveller**
-This is a project built with React and Redux.
+# 📖 [Space Traveller] <a name="about-project"></a>
 
-## 🛠 Built With <a name="built-with">React</a>
 
-### Key Features <a name="key-features">
+**[Space Traveler]** In this project we utilized real live data from the SpaceX API. We built a web application for a company that provides commercial and scientific space travel services. The application allow users to book rockets and join selected space missions.
 
-</a>
+- Here is a link to our video presentation of the project.
+[Video presentation in the works]()
 
-- React components&events
+## 🛠 Built With <a name="built-with"></a>
+
+### Tech Stack <a name="tech-stack"></a>
+
+<details>
+  <summary>Client</summary>
+  <ul>
+    <li><a href="https://reactjs.org/">React.js</a></li>
+  </ul>
+  <ul>
+    <li><a href="https://redux.js.org/">Redux.js</a></li>
+  </ul>
+  <ul>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS">CSS</a></li>
+  </ul>
+  <ul>
+    <li><a href="https://www.javascript.com/">JavaScript</a></li>
+  </ul>
+</details>
+<details>
+  <summary>Space X Data API</summary>
+  <ul>
+    <li><a href="https://api.spacexdata.com/v4/rockets">Link to rockets data</a></li>
+    <li><a href="https://api.spacexdata.com/v3/missions">Link to missions data</a></li>
+  </ul>
+</details>
+
+
+### Key Features <a name="key-features"></a>
+
+- Redux toolkit.
+- Fetch Data from API.
+- Render fetched API data.
+- Navigation by routing.
+- Interactive UI.
+- Tests.
+
+
+## 🚀 Live Demo <a name="live-demo"></a>
+
+- [Live Demo Link](https://space-traveller-fa7x.onrender.com/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-### Future Features <a name="future-features">
-
-</a>
-
-- Add necessary features and functionality.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
-# Getting Started with Create React App
+### Prerequisites
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+In order to run this project you need to:
 
-## Available Scripts
+- Have [npm](https://www.npmjs.com/package/npm) installed in your project:
+  `curl -qL https://www.npmjs.com/install.sh | sh`
 
-In the project directory, you can run:
+### Setup
 
-### `npm start`
+Clone this repository to your desired folder:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+`git clone git remote add origin https://github.com/ClintonYounge/space-traveller`
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+or
 
-### `npm test`
+`git clone git remote add origin https://github.com/ClintonYounge/space-traveller` <-- _Only if you have [SSH keys configured](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account) on your GitHub account_.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+or
 
-### `npm run build`
+Utilizing Github Desktop. A simple interface, thats powerful enough to simplify this process.
+https://desktop.github.com/
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Install
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Run the `npm install` command in your console to install all necessary dependencies.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+### Run tests
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+To run tests, run the following command:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Run the `npm run test` command in your console to run the tests.
 
 ## 👥 Authors <a name="authors"></a>
-
-👤 ** Jiachun Xiang **
-
-- GitHub: https://github.com/mpa-mxiang
-- LinkedIn: https://www.linkedin.com/in/jiachun-lily-xiang-1b197213a/
 
 👤 ** Clinton Younge **
 
@@ -136,6 +124,18 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 - Linkedin: [@clinton-younge](https://www.linkedin.com/in/clinton-younge-83386a25a/)
 - Twitter: [@YoungeCjay](https://twitter.com/YoungeCjay)
 
+👤 ** Jiachun Xiang **
+
+- GitHub: https://github.com/mpa-mxiang
+- LinkedIn: https://www.linkedin.com/in/jiachun-lily-xiang-1b197213a/
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 🔭 Future Features <a name="future-features"></a>
+
+- Better UI and UX
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🤝 Contributing <a name="contributing"></a>
 
@@ -147,14 +147,13 @@ Feel free to check the [issues page](../../issues/).
 
 ## ⭐️ Show your support <a name="support"></a>
 
-If you like this project please don't hesitate to support us with your valued contribution and don't forget to star the repo to reach more
-people.
+If you like this project feel free to leave a star to show your support.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-We would like to appreciate the help we received from all people.
+We would like to give thanks to Microverse for providing us with an environment that makes us strive to grow as developers.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -162,11 +161,11 @@ We would like to appreciate the help we received from all people.
 
 Can I clone this project ?\*\*
 
-- Of course you can as long as you fork it and star it.
+- Of course you can. Consider leaving a star before you fork.
 
 Can I contribute to this project?\*\*
 
-- definitely you can.
+- Sure you can.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -175,4 +174,3 @@ Can I contribute to this project?\*\*
 This project is [License](./LICENSE) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
